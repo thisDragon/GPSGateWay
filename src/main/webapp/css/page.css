@@ -1,0 +1,26 @@
+/**
+*	异步读取分页样式
+*/
+
+/**
+*	样式1 page1
+*	unlink	不能点击的文本样式
+*	link	能点击的文本样式
+*	btn		按钮样式
+*	input	页码输入框
+*/
+.page1_unlink{font-size:9pt;color:#555555;}
+.page1_link{font-size:9pt;cursor:pointer;color:blue;}
+.page1_btn{font-size:9pt;border:solid 1px #dddddd;cursor:pointer;padding-left:2px;padding-right:2px;color:#555555;}
+.page1_input{border:solid 1px #dddddd;height:16px;}
+
+/**
+*	样式2 page2
+*	focus	当前页
+*	blue	不是当前页
+*	btn		按钮样式
+*/
+.page2_focus{font-size:9pt;border:solid 1px #6A98CA;background-color:#6A98CA;padding-left:2px;padding-right:2px;color:#FFFFFF;cursor:pointer;}
+.page2_blur{font-size:9pt;border:solid 1px #E8EFF7;background-color:#FFFFFF;padding-left:2px;padding-right:2px;color:#6A98CA;cursor:pointer;}
+.page2_btn{font-size:12pt;color:#6A98CA; font-family:Courier;cursor:pointer;}
+.page2_text{font-size:9pt;color:#6A98CA;font-weight:bold;}

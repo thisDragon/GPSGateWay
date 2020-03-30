@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+	<class name="com.cari.rbac.LogData" table="T_LOGDATA">
+		<id name="id" column="id" type="string" unsaved-value="unsave">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="logType" column="LOGTYPE" type="integer" ></property>
+		<property name="deviceId" column="DEVICEID" type="string" ></property>
+		<property name="sourceType" column="SOURCETYPE" type="string" ></property>
+		<property name="content" column="CONTENT" type="string" ></property>
+		<property name="state" column="STATE" type="integer" ></property>
+		<property name="createTime" column="CREATETIME" type="timestamp" ></property>
+	</class>
+</hibernate-mapping>

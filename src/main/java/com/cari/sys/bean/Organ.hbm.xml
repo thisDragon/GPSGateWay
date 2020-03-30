@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.cari.sys.bean.Organ" table="SYS_ORGAN">
+		<id name="organID" column="ORGAN_ID" type="string" unsaved-value="unsave">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="organName" column="ORGAN_NAME" type="string" ></property>
+		<property name="organCode" column="ORGAN_CODE" type="string" ></property>
+		<property name="organLevel" column="ORGAN_LEVEL" type="int" not-null="true"></property>
+		<property name="organSort" column="ORGAN_SORT" type="int" not-null="true"></property>
+		<property name="organDesc" column="ORGAN_DESC" type="string" ></property>
+	</class>
+</hibernate-mapping>

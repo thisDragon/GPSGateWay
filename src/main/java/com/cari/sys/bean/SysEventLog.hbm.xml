@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.cari.sys.bean.SysEventLog" table="SYS_EVENTLOG">
+		<id name="dwKey" column="DWKEY" type="string" unsaved-value="unsave">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="userID" column="USERID" type="string" update="false"></property>
+		<property name="userName" column="USERNAME" type="string" update="false"></property>
+		<property name="model" column="MODULENAME" type="string" ></property>
+		<property name="ip" column="IPADDRESS" type="string" ></property>
+		<property name="companyID" column="COMPANYID" type="string" update="false"></property>
+		<property name="eventTime" column="EVENTTIME" type="timestamp" ></property>
+		<property name="event" column="EVENT" type="string" ></property>
+		<property name="eventObject" column="EVENTOBJECT" type="string" ></property>
+		<property name="eventResult" column="EVENTRESULT" type="string" ></property>
+	</class>							   
+</hibernate-mapping>

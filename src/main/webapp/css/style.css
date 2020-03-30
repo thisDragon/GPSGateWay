@@ -1,0 +1,15 @@
+ /*input{font-size:10.4pt;height:25px;}*/
+ a{text-decoration:none;color:#000000;font-size:16px;LETTER-SPACING: 1pt;} 
+ a:hover{text-decoration:none; color: red} 
+    .Link-A{ color:#0041AA;font-size:10.4pt;text-decoration:none;font:bold;}
+   a.Link-A:hover {text-decoration:none;color:black}
+    .Link-B{ color:#ffffff;font-size:10.4pt;text-decoration:underline;font:bold;}
+   a.Link-B:hover {text-decoration:underline;color:#ffff00}
+  
+.11_white{font-size:10.4pt; color:white; font:bold;LETTER-SPACING: 2pt}
+.11_bule{font-size:10.4pt; color:#0041AA; font:bold;LETTER-SPACING: 1pt}
+.11{font-size:10.4pt; LETTER-SPACING: 1pt;line-height:180%}
+.heigh{line-height:140%;}
+.12{font-size:12px;}
+#MIDiv td{font-size:12px;}
+.in{font-size:9pt;}

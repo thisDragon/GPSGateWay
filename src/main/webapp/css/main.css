@@ -1,0 +1,106 @@
+ a,td,form,table,p{font-size:12px; FONT-FAMILY: Arial;LETTER-SPACING: 1pt}
+body {
+    margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	overflow:auto;
+	scrollbar-face-color : #cde2f6;
+    scrollbar-highlight-color : #FFFFFF;
+    scrollbar-shadow-color : #ffffff;
+    scrollbar-3dlight-color : #aac4e3;
+    scrollbar-arrow-color : #99b0dc;
+    scrollbar-track-color : #f6f6fe;
+    scrollbar-darkshadow-color : #9dbcdf
+}
+
+.top{
+	background-image:url(../images/manage/top_02.gif)
+}
+
+.menu01{
+	background-image:url(../images/manage/menu01.jpg)
+}
+
+.menu02{
+	background-image:url(../images/manage/menu02.gif);
+	color:#FFFFFF;
+	text-align:center;
+	padding-bottom:1px;
+	width:81px;
+	cursor:hand;
+}
+.menu021{
+	background-image:url(../images/manage/menu021.jpg);
+	color:#203d80;
+	text-align:center;
+	padding-bottom:1px;
+	width:81px;
+	cursor:hand;
+}
+.menu03{
+	background-image:url(../images/manage/menu03.jpg);
+	color:#FFFFFF;
+	text-align:center;
+	padding-bottom:1px
+	
+}
+
+/**/
+.tool01{
+	background-image:url(../images/manage/tool01.jpg)
+}
+.tool02{
+	background-image:url(../images/manage/tool02.jpg)
+}
+
+.menuPadd td{
+	padding-left:16px;
+	padding-right:16px;
+}
+.menuPadd a{
+   color:#000;
+   text-decoration:none;
+}
+.menuPadd a:hover {
+   color:#102848;
+   text-decoration:underline;
+}
+
+/*title*/
+.conTitle01{
+	background-image:url(../images/manage/conTitle01.jpg)
+}
+.conTitle02{
+	background-image:url(../images/manage/conTitle02.jpg);
+	font-size:11pt;
+	font:bold;
+	text-align:center;
+	vertical-align:bottom;
+}
+.conTitle03{
+	background-image:url(../images/manage/conTitle03.jpg)
+}
+.h{line-height:120%}
+.t{color:#003366}
+.login01{
+	background-image:url(../images/manage/login01.jpg);
+	background-position:top;
+	background-repeat:repeat-x;
+	overflow:auto;
+}
+.login02{
+	background-image:url(../images/manage/login02.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.menuPadd{ color:#000000;text-decoration:none;}
+a.menuPadd:hover {text-decoration:underline;color:#234783}
+.pic{
+	background-image:url(../images/manage/pic.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.toolbtn02{
+	background-image:url(../images/manage/toolbtn02.jpg);
+}

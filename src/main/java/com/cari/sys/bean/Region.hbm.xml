@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.cari.sys.bean.Region" table="SYS_ATLASLIST">
+		<id name="dwKey" column="DWKEY" type="string">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="cityCode" column="CITYCODE" type="string"></property>		
+		<property name="province" column="PROVINCE" type="string"></property>
+		<property name="city" column="CITY" type="string"></property>
+		<property name="county" column="COUNTY" type="string" ></property>
+		<property name="active" column="ACTIVE" type="string" ></property>
+		<property name="orderNo" column="ORDERNO" type="string" ></property>		
+		<property name="centerX" column="CENTERX" type="double" ></property>
+		<property name="centerY" column="CENTERY" type="double" ></property>
+		<property name="defaultLayer" column="DEFAULTLAYER" type="integer"></property>
+		<property name="left" column="[LEFT]" type="double" ></property>
+		<property name="right" column="[RIGHT]" type="double" ></property>
+		<property name="top" column="[TOP]" type="double" ></property>
+		<property name="bottom" column="BOTTOM" type="double" ></property>		
+	</class>
+</hibernate-mapping>

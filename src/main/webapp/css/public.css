@@ -1,0 +1,77 @@
+body,a,td,form,table,p{font-size:12px;}
+/*默认的蓝色A标签样式 鼠标经过为红色*/
+a{text-decoration:none;color:blue;font-size:12px;LETTER-SPACING: 1pt;}
+a:hover{text-decoration:none; color: red} 
+
+/*淡蓝的A标签样式 鼠标经过为红色*/
+.Link-A{ color:003399;font-size:12px;text-decoration:none;}
+a.Link-A:hover {text-decoration:underline;color:red}
+
+/*深绿粗体的A标签样式 鼠标经过为红色*/
+.Link-B{ color:#3F4D00;font-size:12px;text-decoration:none;font:bold;LETTER-SPACING: 1pt}
+a.Link-B:hover {  text-decoration: none;color:red}
+
+/*黑色的A标签样式 鼠标经过为绿色*/
+.Link-C{ color:#000000;font-size:12px;LETTER-SPACING: 1pt}
+a.Link-C:active {  text-decoration: underline}
+a.Link-C:hover {text-decoration:none;color:#066016}
+
+/*黄色的A标签样式 鼠标经过为白色 用于背景色为深蓝或红色的A链接*/
+.Link-D{ color:#FFFF99;font-size:12px}
+a.Link-D:hover {text-decoration:none;color:#FFFFFF}
+
+/*黑色的A标签样式 鼠标经过为红色*/
+.Link-E{ color:#000000;font-size:12px;text-decoration:none;}
+a.Link-E:hover {text-decoration:none;color:red}
+
+/*白色的A标签样式 鼠标经过为红色*/
+.Link-F{ color:#ffffff;font-size:12px;text-decoration:none;}
+a.Link-F:hover {text-decoration:underline;color:red;}
+
+/*淡蓝色的粗体A标签样式 鼠标经过为黑色*/
+.Link-G{color:#0041AA;font-size:10.4pt;text-decoration:none;font:bold;}
+a.Link-G:hover {text-decoration:none;color:black;}
+
+/*蓝色的并有下划线的A标签 鼠标经过为红色并去掉下划线*/
+.Link-H{color:blue;text-decoration:underline;}
+a.Link-H:hover{text-decoration:none;color:red;}
+
+/*白色的有下划线的A标签样式 鼠标经过为黄色并去掉下划线*/
+.Link-I{ color:#ffffff;font-size:12px;text-decoration:underline;}
+a.Link-I:hover {text-decoration:none;color:yellow;}
+
+/*兰色调的滚动条样式*/
+.blueScroll{
+	scrollbar-face-color : #cde2f6;
+    scrollbar-highlight-color : #FFFFFF;
+    scrollbar-shadow-color : #ffffff;
+    scrollbar-3dlight-color : #aac4e3;
+    scrollbar-arrow-color : #99b0dc;
+    scrollbar-track-color : #f6f6fe;
+    scrollbar-darkshadow-color : #9dbcdf
+}
+
+/*用于文本当按钮用的时候*/
+.btn_blue{
+	cursor:pointer;color:blue;
+}
+
+/*用于周边Tab页*/
+.Tab_blur{color:#336699;padding:5px;cursor:pointer;background-color:#F4F8FB;border-right:solid 0px #E8EFF7;border-bottom:solid 1px #E8EFF7; border-left:solid 1px #E8EFF7;  border-top:solid 1px #E8EFF7;}
+.Tab_focus{cursor:pointer;padding:5px;background:#336699;border-right:solid 0px #E8EFF7;border-bottom:solid 0px #E8EFF7; border-left:solid 1px #E8EFF7;  border-top:solid 1px #E8EFF7;color:#FFFFFF}
+.Tab_Con{border-right:solid 1px #E8EFF7;border-bottom:solid 1px #E8EFF7; border-left:solid 0px #E8EFF7; border-top:solid 1px #E8EFF7;}
+.divcon{word-wrap : break-word;word-break:break-all; background-color:#F4F8FB}
+
+/*加粗深红色字体*/
+.redB{color:#cc0033;font-weight:bold;}
+
+/*加粗深红色大字体*/
+.blackBB{color:#cc0033;font-weight:bold;font-size:10.5pt;}
+
+/*加粗黑色大字体*/
+.heiB{color:#000000;font-weight:bold;}
+
+/*通用10.5pt大小字体*/
+.TextB{font-size:10.4pt;}
+
+.public_btn{background-image:url(../images/bus_hc/image_30.jpg);width:64;height:26;border:0px;cursor:pointer;}

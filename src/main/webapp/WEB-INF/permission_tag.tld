@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>Web Component</shortname>
+	<info>
+		The Web Component custom tag library contains tags 
+		which can be used to modulize web page components.
+	</info>
+	
+	<tag>
+		<name>permission</name>
+		<tagclass>com.cari.rbac.PermissionTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>A Tag for RBAC permission check</info>
+		<attribute>
+			<name>module_id</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>operator_id</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

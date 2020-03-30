@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.cari.rbac.RoleModuleRight" table="sys_rbac_modright">
+		<composite-id>
+			<key-property name="module_id" column="MODULE_ID" type="string"></key-property>
+			<key-property name="role_id" column="ROLE_ID" type="string"></key-property>
+		</composite-id>
+		
+		<property name="right_value" column="RIGHT_VALUE" type="integer"></property>
+	</class>
+</hibernate-mapping>

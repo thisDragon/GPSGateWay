@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+	<class name="com.cari.rbac.DataSourceForward" table="T_GPSDATASOURCEFORWARD">
+		<id name="id" column="id" type="string" unsaved-value="unsave">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="subscriptionName" column="SUBSCRIPTIONNAME" type="string" ></property>
+		<property name="forwardUrl" column="FORWARDURL" type="string" ></property>
+		<property name="sourceType" column="SOURCETYPE" type="string" ></property>
+		<property name="remark" column="REMARK" type="string" ></property>
+		<property name="account" column="ACCOUNT" type="string" ></property>
+		<property name="password" column="PASSWORD" type="string" ></property>
+		<property name="isEnable" column="ISENABLE" type="integer" ></property>
+		<property name="createUser" column="CREATEUSER" type="string" ></property>
+		<property name="createTime" column="CREATETIME" type="timestamp" ></property>
+		<property name="modifyUser" column="MODIFYUSER" type="string" ></property>
+		<property name="modifyTime" column="MODIFYTIME" type="timestamp" ></property>
+	</class>
+</hibernate-mapping>

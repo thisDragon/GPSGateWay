@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.cari.sys.bean.SysUser" table="SYS_RBAC_USER" >
+		<id name="userId" column="USER_ID" type="string" unsaved-value="unsave">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="userName" column="USER_NAME" type="string" ></property>
+		<property name="password" column="USER_PASS" type="string" ></property>
+		<property name="code" column="USER_CODE" type="string" ></property>
+		<property name="dept" column="USER_DEPT_ID" type="string" ></property>
+		<property name="duty" column="USER_DUTY" type="string" ></property>
+		<property name="cartType" column="USER_CERT_TYPE" type="string" ></property>
+		<property name="cartCode" column="USER_CERT_CODE" type="string" ></property>
+		<property name="regDate" column="USER_DATE" type="timestamp" ></property>
+		<property name="nation" column="USER_NATION" type="string" ></property>
+		<property name="sex" column="USER_SEX" type="string" ></property>
+		<property name="tel" column="USER_PHONE" type="string" ></property>
+		<property name="mobile" column="USER_MOBILE" type="string" ></property>
+		<property name="email" column="USER_MAIL" type="string" ></property>
+		<property name="address" column="USER_ADDRESS" type="string" ></property>
+		<property name="postCode" column="USER_POST_CODE" type="string" ></property>
+		<property name="remark" column="USER_REMARK" type="string" ></property>
+   		<set name="roles"  
+   		table="SYS_RBAC_USERTOROLE" 
+   		lazy="false"
+   		inverse="false" 
+   		cascade="none" 
+   		sort="unsorted">
+              <key column="user_id"></key>
+              <many-to-many
+              class="com.cari.rbac.Role"
+              column="role_id"
+              outer-join="auto"/>
+        </set>
+	</class>							   
+</hibernate-mapping>
+	

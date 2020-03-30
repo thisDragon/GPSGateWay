@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="show_sql">false</property>
+		<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+		
+		<mapping resource="com/cari/rbac/Role.hbm.xml" />
+		<mapping resource="com/cari/rbac/Operation.hbm.xml" />
+		<mapping resource="com/cari/rbac/RoleModuleRight.hbm.xml" />
+		<mapping resource="com/cari/rbac/Module.hbm.xml" />
+		<mapping resource="com/cari/sys/bean/Organ.hbm.xml" />
+		<mapping resource="com/cari/sys/bean/Region.hbm.xml" />
+		<mapping resource="com/cari/sys/bean/SysUser.hbm.xml" />
+		<mapping resource="com/cari/sys/bean/SysEventLog.hbm.xml" />
+		
+		<mapping resource="com/cari/rbac/DataSourceConfig.hbm.xml" />
+		<mapping resource="com/cari/rbac/DataSourceForward.hbm.xml" />
+		<mapping resource="com/cari/rbac/LogData.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

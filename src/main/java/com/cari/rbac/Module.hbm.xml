@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.cari.rbac.Module" table="SYS_RBAC_MODULE">
+		<id name="moduleID" column="MODULE_ID" type="string" unsaved-value="unsave">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="moduleName" column="MODULE_NAME" type="string" ></property>
+		<property name="moduleLevel" column="MODULE_LEVEL" type="integer" ></property>
+		<property name="moduleSort" column="MODULE_SORT" type="integer" ></property>
+		<property name="moduleDesc" column="MODULE_DESC" type="string" ></property>
+		<set name="operations" 
+			lazy="true" 
+			inverse="false" 
+			cascade="none"
+			order-by="orderNo asc" 
+			table="sys_rbac_mod2op">
+			
+			<key column="MODULE_ID"/>
+			<many-to-many column="operator_id" 
+			class="com.cari.rbac.Operation"/>
+		</set>
+	</class>
+</hibernate-mapping>

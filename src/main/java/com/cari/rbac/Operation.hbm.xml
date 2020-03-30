@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.cari.rbac.Operation" table="sys_rbac_operate">
+		<id name="operate_id" column="operate_id" type="string">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="operate_name" column="operate_name" type="string" ></property>
+		<property name="operate_value" column="operate_value" type="integer" ></property>
+	</class>
+</hibernate-mapping>
